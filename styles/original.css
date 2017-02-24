@@ -9,6 +9,12 @@ body {
   padding: 2rem;
 }
 
+@media (max-width: 720px) {
+  body {
+    padding: 0;
+  }
+}
+
 a {
   color: rgb(62, 78, 23);
   text-decoration: none;
@@ -66,9 +72,27 @@ nav li.active {
   background-color: rgba(102, 196, 58, 0.4);
 }
 
+@media (max-width: 615px) {
+  nav ul {
+    flex-direction: column;
+  }
+  
+  nav li {
+    width: 100%;
+  }
+}
+
+
 article {
   margin: 3rem auto;
   width: 75%;
+}
+
+@media (max-width: 720px) {
+  body {
+    margin: 0 auto;
+    width: 85%;
+  }
 }
 
 article h2 {
@@ -102,4 +126,10 @@ footer {
 footer form {
   margin-left: 2rem;
   display: inline;
+}
+
+@media (max-width: 1197px) {
+  footer form {
+    display: block;
+  }
 }
